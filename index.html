@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>events practice</title>
+    <script>
+        let count = 0;
+
+        function inc() {
+            count++;
+            document.getElementById("counter").innerHTML = count;
+        }
+
+        function dec() {
+            count--;
+            document.getElementById("counter").innerHTML = count;
+        }
+
+        function reset() {
+            count = 0;
+            document.getElementById("counter").innerHTML = count;
+        }
+    </script>
+
+</head>
+
+<body>
+    
+    <div class="card-container">
+
+            <img class="card-img" src="./perfume.jpg" alt="">
+            <b class="discription">GUCCI Perfume</b>
+            <b class="discription" style="margin: 5px;">$49.99</b><br>
+
+            <button  onClick="dec()" class="event-btn"> <img src="./minus.png" width="20px"
+                alt=""></button>
+        <button  onClick="reset()" id="counter" class="event-btn"> <img src="./zero.png" width="30px"
+                alt=""></button>
+        <button  onClick="inc()" class="event-btn"><img src="./add.png" width="20px" alt=""></button>
+        <button >Add to Cart</button>
+
+        
+        </div>
+    </div>
+</body>
